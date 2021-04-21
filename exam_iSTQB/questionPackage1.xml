@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE quiz [
+	<!ELEMENT quiz (title, items)>
+	<!ELEMENT title (#PCDATA)>
+	<!ELEMENT items (item)+>	
+	<!ELEMENT item (question, answer, answer+)>
+	<!ELEMENT question (#PCDATA)>
+	<!ELEMENT answer (#PCDATA)>
+	<!ATTLIST answer correct (y) #IMPLIED>
+]>
+
+<quiz>
+  <title>Sample Quiz (Package 1)</title>
+    <items>
+      <item>
+        <question>Q.1: Which of the following is the task of a Tester?
+                i  . Interaction with the Test Tool Vendor to identify best ways to leverage test tool on the project.
+                ii . Prepare and acquire Test Data.
+                iii. Implement Tests on all test levels, execute and log the tests.
+                iv . Create the Test Specifications.
+        </question>
+        <answer>A. i,ii,iii is true and iv is false.</answer>
+        <answer correct="y">B. ii, iii, iv is true and I is false.</answer>
+        <answer>C. i is true and ii, iii, iv are false.</answer>
+        <answer>D. iii and iv is correct and I and ii are incorrect.</answer>
+      </item>
+      <item>
+        <question>Q.2: What can static analysis NOT find?</question>
+        <answer>A. The use of a variable before it has been defined.</answer>
+        <answer>B. Unreachable (“dead”) code.</answer>
+        <answer correct="y">C. Memory leaks</answer>
+        <answer>D. Array bound violations.</answer>
+      </item>		
+      <item>
+        <question>Q. 3: Reviewing the test Basis is a part of which phase</question>
+        <answer correct="y">A. Test Analysis and Design</answer>
+        <answer>B. Test Implementation and execution</answer>
+        <answer>C. Test Closure Activities</answer>
+        <answer>D. Evaluating exit criteria and reporting.</answer>
+      </item>		
+      <item>
+        <question>Q.4: Component Testing is also called as :
+                    i. Unit Testing
+                    ii. Program Testing
+                    iii. Module Testing
+                    iv. System Component Testing .
+        </question>
+        <answer correct="y">A. i,ii,iii are true and iv is false</answer>
+        <answer>B. i,ii,iii,iv are false</answer>
+        <answer>C. i,ii,iv are true and iii is false</answer>
+        <answer>D. all of above is true</answer>
+      </item>		
+    </items>
+</quiz>
